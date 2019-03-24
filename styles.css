@@ -41,5 +41,8 @@ ul.navbar li {
     color: blue;
   }
   
-  
+  p {
+    font: 1em sans-serif;
+    color: #17252a;
+  }
   
