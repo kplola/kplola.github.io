@@ -14,11 +14,13 @@ ul.navbar {
     position: absolute;
     top: 30px;
     left: 15px;
+    right: 10px;
     width: 150px;
+
 }
 
 ul.navbar li {
-    margin: 5px 0;
+    margin: 5px;
     padding: 5px;
     border-right: 1px solid #17252a;
     border-top: 1px solid #17252a;
@@ -41,8 +43,14 @@ ul.navbar li {
     color: blue;
   }
   
-  p {
-    font: 1em sans-serif;
-    color: #17252a;
+  #first{
+    width: 50px;
+    height: 50px;
+  }
+
+ #container {
+    display: block;
+    margin: 40px;
+    padding: 10px;
   }
   
