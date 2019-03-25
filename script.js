@@ -7,18 +7,19 @@ function init() {
   //  document.getElementById("first").src = "icons/flower1.png";
   // document.getElementById("container").getElementsByTagName("img")[1].src = "icons/flower2.png";
 
-  // Task 1:  GetElementById and GetElementByTagName
+/* // Task 1:  GetElementById and GetElementByTagName
   let images = document.getElementById("container").getElementsByTagName("img");
     images[1].src = "icons/flower2.png";
     images[3].src = "icons/flower2.png";
 
   // Task 3: .innerHTML
     document.getElementById("first").innerHTML = "<div><p>You are great !</p></div>";
-  
+*/
+
     // Task 4: create element
 
     let image = document.createElement("img");
-    image.src = "icons/car1.png";
+    image.src = "icons/car2.png";
 
     document.getElementById("new_element").appendChild(image);
 
@@ -42,4 +43,3 @@ function init() {
       document.getElementById("event").addEventListener("mouseover", changeSrc);
     
 }
-
