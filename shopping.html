@@ -9,6 +9,7 @@
     
 </head>
 <body>
+        <script src="script.js"></script>
         <ul class="navbar">
                 <a href="index.html">Home</a>
                 <a href="tasks.html">Tasks</a>
@@ -16,18 +17,19 @@
                 <a href="https://www.efrei.fr">Efrei</a>         
         </ul>
         <div class="shopdiv">
-                <form action="">
-                        Item to buy:
-                        <input type="text" placeholder="enter your item" name="itemInput" value="">
-                        <input type="button" value="Add">
-                    </form>
-                    <p>Shopping list : </p>
-                    <ol id="myItem">
+                <form method="POST">
+                        Put your item here:
+                        <input type="text" name="name" id="input">
+                        <button type=" button" onclick="addItem()">Add</button>
+                        <p>Shopping list : </p>
+                    <ul id="myItem">
             
-                    </ol>
+                    </ul>
+                </form>
+                
         </div>
       
 
-<script src="script.js"></script>
+
 </body>
 </html>

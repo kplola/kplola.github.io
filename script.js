@@ -42,4 +42,14 @@ function init() {
     };
       document.getElementById("event").addEventListener("mouseover", changeSrc);
     
-}
+    // Shopping
+
+    function addItem() {
+        var ul = document.getElementById("myItem");
+        var valueInput = document.getElemenyById("input").value;
+        var li = document.createElement("li");
+        let text = document.createTexteNode(valueInput);
+        li.appendChild(text);
+        ul.appendChild(li);
+    }
+}  
