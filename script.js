@@ -41,15 +41,31 @@ function init() {
         }
     };
       document.getElementById("event").addEventListener("mouseover", changeSrc);
-    
-    // Shopping
+}
 
-    function addItem() {
-        var ul = document.getElementById("myItem");
-        var valueInput = document.getElemenyById("input").value;
-        var li = document.createElement("li");
-        let text = document.createTexteNode(valueInput);
-        li.appendChild(text);
-        ul.appendChild(li);
-    }
-}  
+// Shopping
+
+function item() {
+    var ul = document.getElementById("values");
+    var x = document.getElementById("input").value;
+    var li = document.createElement("li");
+    let text = document.createTextNode(x);
+   li.appendChild(text);
+   ul.appendChild(li);
+  
+    if(document.getElementById("important").checked){
+      li.style.color ="red";
+    } else if(document.getElementById("groceries").checked){
+      li.style["text-decoration"] = "underline";
+    } 
+    
+    //console.log(x);
+  }
+  
+  
+function removeItem(){
+    var ul = document.getElementById("values");
+    var index = document.getElementById("remove_input").value;
+    ul.removeChild(ul.childNodes[index-1]);
+  
+  } 
